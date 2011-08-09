@@ -56,7 +56,6 @@
       } else {
         deleteItem(namespace, key);
       }
-
     } else {
       return value;
     }
@@ -75,7 +74,9 @@
    */
   var setItem = function(namespace, key, value, expire) {
     var item = {
-      value: value,
+      namespace: namespace,
+      key: key,
+      value: value
     };
 
     if (expire) {
@@ -106,16 +107,16 @@
    */
   var getInstance = function(namespace) {
     return {
-      get: function(key) {
+      getItem: function(key) {
         return getItem(namespace, key);
       },
 
-      set: function(key, value, expire) {
-        return setItem(namespace, key, value, expire);
+      setItem: function(key, value, expire) {
+        setItem(namespace, key, value, expire);
       },
 
-      delete: function(key) {
-        return setItem(namespace, key);
+      deleteItem: function(key) {
+        deleteItem(namespace, key);
       }
     }
   };
