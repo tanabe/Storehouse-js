@@ -1,11 +1,9 @@
 # Storehouse.js
 
-----
 ## what is this?
 
 This is html5 localStorage/sessionStorage wrapper library.
 
-----
 ## usage
 
 write below code
@@ -54,6 +52,5 @@ storehouse instance within the specified namepsace
     storehouse.getItem("bar");//returns "hello"
     storehouse.deleteItem("bar");
 
-----
 ## author
 [@tanabe](http://twitter.com/tanabe)
