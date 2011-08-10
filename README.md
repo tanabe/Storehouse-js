@@ -6,8 +6,6 @@ This is html5 localStorage/sessionStorage wrapper library.
 
 ## usage
 
-write below code
-
     <script type="text/javascript" src="storehouse.js"></script>
 
 ### static api
@@ -20,7 +18,7 @@ write below code
 #### store
 
     Storehouse.setItem("com.kaihatsubu.foo", "bar", "hello", new Date(2011, 10, 1));
-    //this code means store {bar: hello} to localStorage expire on 2011 sep 1 00:00
+    //this code means store {bar: hello} to localStorage expire on 2011 sep 1 00:00:00
 
     Storehouse.setItem("com.kaihatsubu.foo", "bar", "hello");
     //this code means store {bar: hello} to sessionStorage
