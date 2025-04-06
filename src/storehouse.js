@@ -6,7 +6,7 @@ export default class Storehouse {
     return this.getMD5Hash([namespace, key].join("-"));
   };
 
- static getItem = function(namespace, key) {
+  static getItem = function(namespace, key) {
     var storageKey = this.createKey(namespace, key);
     var item = JSON.parse(sessionStorage.getItem(storageKey)) || JSON.parse(localStorage.getItem(storageKey));
 
