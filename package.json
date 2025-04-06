@@ -1,7 +1,10 @@
 {
   "name": "storehouse-js",
   "version": "1.0.0",
-  "main": "dist/storehouse.js",
+  "main": "./dist/storehouse.js",
+  "exports": {
+    "import": "./dist/storehouse.js"
+  },
   "type": "module",
   "scripts": {
     "build": "rollup -c"
