@@ -6,7 +6,7 @@ This is html5 localStorage/sessionStorage wrapper library.
 
 ## usage
 
-    <script type="text/javascript" src="storehouse.js"></script>
+    import Storehouse from 'path/to/storehouse.js';
 
 ### static api
 
@@ -49,6 +49,3 @@ storehouse instance within the specified namepsace
     storehouse.setItem("bar", "hello");
     storehouse.getItem("bar");//returns "hello"
     storehouse.deleteItem("bar");
-
-## author
-[@tanabe](http://twitter.com/tanabe)

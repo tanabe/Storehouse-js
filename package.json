@@ -1,0 +1,22 @@
+{
+  "name": "storehouse-js",
+  "version": "1.0.0",
+  "main": "dist/storehouse.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanabe/Storehouse-js"
+  },
+  "author": "Hideaki Tanabe",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.39.0"
+  }
+}
